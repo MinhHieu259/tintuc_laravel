@@ -20,4 +20,16 @@ Route::get('/trang-chu','HomeController@index');
 Route::get('/Admin','AdminController@index');
 Route::get('/Dashboard','AdminController@show_dashboard');
 Route::post('/admin-login','AdminController@dashboard');
- Route::get('/logout','AdminController@logout');
+Route::get('/logout','AdminController@logout');
+
+// Category
+Route::get('/add-category','CategoryController@add_category');
+Route::get('/list-category','CategoryController@list_category');
+Route::post('/insert-category','CategoryController@insert_category');
+Route::get('/edit-category/{category_id}','CategoryController@edit_category');
+Route::post('/update-category/{category_id}','CategoryController@update_category');
+Route::get('/delete-category/{category_id}','CategoryController@delete_category');
+
+// News
+Route::get('/add-news','NewController@add_news');
+Route::get('/list-news','NewController@list_news');
