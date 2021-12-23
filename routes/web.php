@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 //Người dùng
 Route::get('/','HomeController@index');
 Route::get('/trang-chu','HomeController@index');
+
+// Admin
+Route::get('/Admin','AdminController@index');
+Route::get('/Dashboard','AdminController@show_dashboard');
+Route::post('/admin-login','AdminController@dashboard');
+ Route::get('/logout','AdminController@logout');
