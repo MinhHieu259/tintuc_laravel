@@ -33,3 +33,7 @@ Route::get('/delete-category/{category_id}','CategoryController@delete_category'
 // News
 Route::get('/add-news','NewController@add_news');
 Route::get('/list-news','NewController@list_news');
+Route::post('/insert-news','NewController@insert_news');
+Route::get('/edit-news/{news_id}','NewController@edit_news');
+Route::post('/update-news/{news_id}','NewController@update_news');
+Route::get('/delete-news/{news_id}','NewController@delete_news');

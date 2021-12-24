@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('public/backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <script src="//cdn.ckeditor.com/4.17.1/full/ckeditor.js"></script>
 
 </head>
 

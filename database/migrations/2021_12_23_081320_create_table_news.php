@@ -17,8 +17,8 @@ class CreateTableNews extends Migration
             $table->bigIncrements('id_news');
             $table->string('title_new');
             $table->string('image_new');
-            $table->string('short_desc');
-            $table->string('content');
+            $table->longText('short_desc');
+            $table->longText('content');
             $table->integer('status');
             $table->integer('id_category');
             $table->integer('createdby');
