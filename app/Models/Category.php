@@ -14,4 +14,8 @@ class Category extends Model
     {
         return $this->belongsTo('App\Models\Admin', 'createdby');
     }
+    public function news()
+    {
+        return $this->hasMany('App\Models\News', 'id_category');
+    }
 }

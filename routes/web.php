@@ -37,3 +37,11 @@ Route::post('/insert-news','NewController@insert_news');
 Route::get('/edit-news/{news_id}','NewController@edit_news');
 Route::post('/update-news/{news_id}','NewController@update_news');
 Route::get('/delete-news/{news_id}','NewController@delete_news');
+Route::get('/detail-news/{news_id}','NewController@detail_news');
+Route::get('/list-news-category/{id_category}','NewController@list_news_category');
+
+//Document
+Route::get('/add-document','DocumentController@add_document');
+Route::post('/insert-document','DocumentController@insert_document');
+Route::get('/vanban','DocumentController@show_vanban');
+Route::get('/download/{file}','DocumentController@download');

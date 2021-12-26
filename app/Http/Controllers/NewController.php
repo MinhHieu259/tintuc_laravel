@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use PhpParser\Node\Stmt\Catch_;
 
 class NewController extends Controller
 {
@@ -101,5 +102,17 @@ class NewController extends Controller
         }
         $news->delete();
         return redirect('list-news')->with('success', 'Delete news success');
+    }
+    public function detail_news($id_news)
+    {
+        $Category = Category::all();
+        $news = News::find($id_news);
+        return view('pages.detail_news')->with(compact('news','Category'));
+    }
+    public function list_news_category($id_category)
+    {
+        $Category = Category::all();
+        $news_cate = News::where('id_category', '=', $id_category)->get();
+        return view('pages.news_by_category')->with(compact('Category','news_cate'));
     }
 }
