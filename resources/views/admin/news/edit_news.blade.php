@@ -17,7 +17,7 @@
                     placeholder="Nội dung ngắn..." name="short_desc">
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Nội dung tin..." class="form-control ckeditor" name="content" >{{$news->content}}</textarea>
+                    <textarea id="content_edit" placeholder="Nội dung tin..." class="form-control " name="content" >{{$news->content}}</textarea>
                 </div>
                 <div class="form-group">
                    <select class="form-control " name="status_news">

@@ -101,7 +101,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Quản lý tài liệu:</h6>
                         <a class="collapse-item" href="{{url::to('/add-document')}}">Thêm mới tài liệu</a>
-                        <a class="collapse-item" href="{{url::to('/list-news')}}">Danh sách tài liệu</a>
+                        <a class="collapse-item" href="{{url::to('/list-document')}}">Danh sách tài liệu</a>
                     </div>
                 </div>
             </li>
@@ -297,9 +297,8 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nguyễn Minh Hiếu</span>
+                                
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

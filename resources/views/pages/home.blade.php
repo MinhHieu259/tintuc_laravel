@@ -41,7 +41,7 @@
 					<!-- Menu desktop -->
 					<nav class="menu-desktop">
 						<a class="logo-stick" href="index.html">
-							<img src="images/icons/logo-01.png" alt="LOGO">
+							<img src="{{URL::to('public/storage/uploads/logo2.png')}}" alt="LOGO">
 						</a>
 
 						<ul class="main-menu">
@@ -61,24 +61,13 @@
 								
 							</li>
 
-							<li>
-								<a href="index.html">Giới thiệu</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Giới thiệu chung</a></li>
-									<li><a href="home-02.html">Cán bộ</a></li>
-								</ul>
-							</li>
+							
 
 							<li class="mega-menu-item">
 								<a href="{{URL::to('vanban')}}">Văn bản</a>
 							</li>
 
-							<li class="mega-menu-item">
-								<a href="category-01.html">Liên hệ</a>
-							</li>
-							<li>
-								<a href="category-01.html">Đăng nhập</a>
-							</li>
+							
 
 						</ul>
 					</nav>

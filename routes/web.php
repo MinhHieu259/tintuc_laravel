@@ -45,3 +45,7 @@ Route::get('/add-document','DocumentController@add_document');
 Route::post('/insert-document','DocumentController@insert_document');
 Route::get('/vanban','DocumentController@show_vanban');
 Route::get('/download/{file}','DocumentController@download');
+Route::get('/list-document','DocumentController@list_document');
+Route::get('/edit-document/{document_id}','DocumentController@edit_document');
+Route::post('/update-document/{document_id}','DocumentController@update_document');
+Route::get('/delete-document/{document_id}','DocumentController@delete_document');

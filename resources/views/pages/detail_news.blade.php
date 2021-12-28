@@ -55,30 +55,19 @@
 								<ul class="sub-menu">
 									@foreach ($Category as $item =>$list_category)
 										
-									<li><a href="index.html">{{$list_category->name_category}}</a></li>
+									<li><a href="{{URL::to('list-news-category/'.$list_category->id_category)}}">{{$list_category->name_category}}</a></li>
 									@endforeach
 								</ul>
 								
 							</li>
 
-							<li>
-								<a href="index.html">Giới thiệu</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Giới thiệu chung</a></li>
-									<li><a href="home-02.html">Cán bộ</a></li>
-								</ul>
-							</li>
+							
 
 							<li class="mega-menu-item">
-								<a href="category-01.html">Văn bản</a>
+								<a href="{{URL::to('vanban')}}">Văn bản</a>
 							</li>
 
-							<li class="mega-menu-item">
-								<a href="category-01.html">Liên hệ</a>
-							</li>
-							<li>
-								<a href="category-01.html">Đăng nhập</a>
-							</li>
+							
 
 						</ul>
 					</nav>
