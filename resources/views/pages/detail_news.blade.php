@@ -142,7 +142,7 @@
 							</p>
 
 							<p class="f1-s-11 cl6 p-b-25">
-								{{$news->content}}
+								{!! $news->content !!}
 							</p>
 
 							
