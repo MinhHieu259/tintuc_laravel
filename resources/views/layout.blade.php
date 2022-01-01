@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{{asset('images/icons/favicon.png')}}"/>
+	<link rel="shortcut icon" href="{{URL::to('public/storage/uploads/logo.png')}}" />
+	
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{asset('public/frontend/vendor/bootstrap/css/bootstrap.min.css')}}">
 <!--===============================================================================================-->
@@ -37,7 +38,7 @@
 				<div class="row">
 					<div class="col-lg-4 p-b-20">
 						<div class="size-h-3 flex-s-c">
-							<a href="index.html">
+							<a href="{{URL::to('/')}}">
 								<img class="max-s-full" src="{{URL::to('public/storage/uploads/logo2.png')}}" alt="LOGO">
 							</a>
 						</div>

@@ -40,7 +40,7 @@
 				<div class="main-nav">
 					<!-- Menu desktop -->
 					<nav class="menu-desktop">
-						<a class="logo-stick" href="index.html">
+						<a class="logo-stick" href="{{URL::to('/')}}">
 							<img src="{{URL::to('public/storage/uploads/logo2.png')}}" alt="LOGO">
 						</a>
 
